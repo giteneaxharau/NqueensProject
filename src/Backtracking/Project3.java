@@ -1,9 +1,9 @@
 package Backtracking;
 
 public class Project3 {
-    private final int T_board;
-    private final int rowQueen;
-    private final int columnQueen;
+    private int T_board;
+    private int rowQueen = 0;
+    private int columnQueen = 0;
     boolean[][] solution;
     boolean result = false;
 

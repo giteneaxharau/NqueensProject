@@ -1,16 +1,16 @@
 package Backtracking;
 
 import java.util.ArrayList;
+
 public class Project4 {
-    private final int T_board;
-    private final ArrayList<boolean[][]> solutions = new ArrayList<>();
+    private int T_board;
+    private ArrayList<boolean[][]> solutions = new ArrayList<>();
 
     public Project4(int dimension) {
         this.T_board = dimension;
     }
 
     public ArrayList<boolean[][]> findSolution() {
-
         Board board = new Board(T_board);
         results(board, 0);
         if (solutions.isEmpty()) {

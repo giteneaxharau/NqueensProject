@@ -15,8 +15,8 @@ import javax.swing.*;
 
 public class Graphics extends JFrame {
 
-    ImageIcon image = new ImageIcon("![](../queen.png)");
-    ImageIcon logo = new ImageIcon("logo![](../logo.png).png");
+    ImageIcon image = new ImageIcon("src/queen.png)");
+    ImageIcon logo = new ImageIcon("src/logo.png");
     public JLabel[][] board;
     public int dimension, rowp3, columnp3;
     public int index = 0;
@@ -40,6 +40,8 @@ public class Graphics extends JFrame {
         this.setIconImage(logo.getImage());
         outMenu = new JMenuBar();
         outButtons = new JMenuBar();
+        solutions = new ArrayList<>();
+
 
         Menu = new JMenu("Menu");
         Size = new JMenuItem("Choose the board size...");
